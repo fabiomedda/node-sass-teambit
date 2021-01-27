@@ -1,1 +1,167 @@
+/*
+Istruzioni: 
+riproducete il layout responsive come da screenshots usando SASS. 
+Le media query fino a 550px per i dispositivi mobili,
+tra 550 e 998 per tablet e oltre 998 per desktop.
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  border-bottom: 1px solid #7B6858;
+}
+nav .right ul {
+  display: flex;
+  align-items: center;
+}
+nav .right ul li a {
+  color: #7B6858;
+  padding: 10px;
+}
+nav .right ul li a:hover {
+  color: blue;
+}
+nav .right ul li .btn {
+  display: flex;
+  align-items: center;
+  border: 1px solid blue;
+  border-radius: 5px;
+  color: blue;
+}
+nav .right ul li .btn img {
+  width: 20px;
+  padding-right: 7px;
+}
+nav .menu_hamburger {
+  display: none;
+}
+nav .menu_hamburger i {
+  padding: 20px;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.jumbotron {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+.jumbotron section {
+  width: 50%;
+}
+.jumbotron .left {
+  padding: 10px 0;
+}
+.jumbotron .left h1 {
+  font-size: 62px;
+  color: #58402C;
+}
+.jumbotron .left p:first-of-type {
+  padding: 15px 0;
+  font-size: 31px;
+  margin-bottom: 20px;
+  color: #58402C;
+}
+.jumbotron .left div {
+  display: flex;
+  align-items: center;
+}
+.jumbotron .left div a {
+  display: flex;
+  align-items: center;
+  background-color: #2C4792;
+  padding: 7px 12px;
+  border-radius: 5px;
+  color: white;
+}
+.jumbotron .left div a img {
+  width: 22px;
+  padding-right: 5px;
+}
+.jumbotron .left div span {
+  padding: 7px;
+}
+.jumbotron .left p:last-of-type {
+  padding: 20px 0;
+}
+.jumbotron .left p:last-of-type a {
+  color: #58402C;
+}
+.jumbotron .right {
+  padding: 10px 0;
+}
+.jumbotron .right img {
+  width: 100%;
+}
+
+/* //navbar */
+/* mediascreen header */
+@media screen and (min-width: 550px) and (max-width: 998px) {
+  nav .right {
+    display: none;
+  }
+
+  nav .menu_hamburger {
+    display: block;
+  }
+
+  .jumbotron {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .jumbotron section {
+    width: 100%;
+    text-align: center;
+  }
+  .jumbotron .left div {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 549px) {
+  nav .right {
+    display: none;
+  }
+
+  nav .menu_hamburger {
+    display: block;
+  }
+
+  .jumbotron {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .jumbotron section {
+    width: 100%;
+    text-align: center;
+  }
+  .jumbotron .left div {
+    justify-content: center;
+  }
+}
+/*
+@import 'partials/_mixins';
+@import 'partials/_main';
+@import 'partials/_footer';
+*/
