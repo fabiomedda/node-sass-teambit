@@ -1,14 +1,15 @@
 /* navbar */
 
 nav{
-    display: flex;
+    @include display_flex;
     justify-content: space-between;
     align-items: center;
     height: 80px;
     border-bottom: 1px solid $brown;
     .right{
         ul{
-            display: flex;
+            @include display_flex;
+
             align-items: center;
             li{
                 a{
@@ -19,7 +20,7 @@ nav{
                     }
                 }
                 .btn{
-                    display: flex;
+                    @include display_flex;
                     align-items: center;
                     border: 1px solid blue;
                     border-radius: 5px;
@@ -42,7 +43,7 @@ nav{
     }
 }
 .jumbotron{
-    display: flex;
+    @include display_flex;
     flex-wrap: wrap;
     padding: 30px 0;
     section{
@@ -61,10 +62,10 @@ nav{
             color: $dark_brown;
         }
         div{
-            display: flex;
+            @include display_flex;
             align-items: center;
             a{
-                display: flex;
+                @include display_flex;
                 align-items: center;
                 background-color: $btn_blue;
                 padding: 7px 12px;
@@ -93,7 +94,6 @@ nav{
         }
     }
 }
-
 
 /* //navbar */
 
