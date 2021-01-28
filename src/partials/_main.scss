@@ -192,6 +192,7 @@
         background-color: white;
         border: 2px solid #2C4792;
         border-radius: 15px;
+        position: relative;
         p{
             font-size: 17px;
             color: $dark_brown;
@@ -215,6 +216,13 @@
                     color: #2C4792;
                 }
             }
+        }
+        i{
+            font-size: 35px;
+            color: #2C4792;
+            position: absolute;
+            top: -15px;
+            left: 0;
         }
     }
     .button {
